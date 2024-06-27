@@ -3,7 +3,7 @@ myButton.style.color = "white";
 myButton.style.padding = "30px";
 myButton.style.borderRadius = "30px";
 myButton.style.fontSize = "20px";
-myButton.style.marginLeft = "500px";
+myButton.style.marginLeft = "400px";
 myButton.style.marginTop = "100px";
 //myButton.style.marginLeft = "500px";
 
