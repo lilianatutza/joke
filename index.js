@@ -1,3 +1,12 @@
+myButton.style.backgroundColor = "red";
+myButton.style.color = "white";
+myButton.style.padding = "30px";
+myButton.style.borderRadius = "30px";
+myButton.style.fontSize = "20px";
+
+
+message.style.fontSize = "35px"
+
 document.getElementById("myButton").addEventListener("click", function () {
   let message = "Generating a joke for you.... please wait!";
   document.getElementById("message").innerHTML = message;
