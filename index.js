@@ -11,7 +11,7 @@ document.getElementById("myButton").addEventListener("click", function () {
 });
 
 function showAnswer(response) {
-  var message = document.getElementById("message");
-  var typewriter = new Typewriter(message, {});
+  let message = document.getElementById("message");
+  let typewriter = new Typewriter(message, {});
   typewriter.changeDelay(25).typeString(response.data.answer).start();
 }
