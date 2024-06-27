@@ -3,9 +3,12 @@ myButton.style.color = "white";
 myButton.style.padding = "30px";
 myButton.style.borderRadius = "30px";
 myButton.style.fontSize = "20px";
-
+myButton.style.marginLeft = "500px";
+myButton.style.marginTop = "100px";
+//myButton.style.marginLeft = "500px";
 
 message.style.fontSize = "35px"
+message.style.marginLeft = "200px";
 
 document.getElementById("myButton").addEventListener("click", function () {
   let message = "Generating a joke for you.... please wait!";
