@@ -1,6 +1,6 @@
 document.getElementById("myButton").addEventListener("click", function () {
   let message = "Generating a joke for you.... please wait!";
-  document.querySelector("p").innerHTML = message;
+  document.getElementById("message").innerHTML = message;
 
   let context = "be polite";
   let prompt = "tell me a joke";
@@ -10,7 +10,8 @@ document.getElementById("myButton").addEventListener("click", function () {
   axios.get(apiUrl).then(showAnswer);
 });
 
-
 function showAnswer(response) {
-  document.getElementById("joke").innerHTML = response.data.answer;
+  var message = document.getElementById("message");
+  var typewriter = new Typewriter(message, {});
+  typewriter.changeDelay(25).typeString(response.data.answer).start();
 }
